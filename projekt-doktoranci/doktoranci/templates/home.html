@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="mt-5">Witaj w systemie przewodów doktorskich!</h1>
+
+    {% if request.user.is_authenticated %}
+        <p class="lead mt-3">Cześć, {{ request.user.username }}! Możesz korzystać z dostępnych paneli w menu powyżej.</p>
+    {% else %}
+        <p class="lead mt-3">Zaloguj się, aby kontynuować pracę w systemie.</p>
+        <a href="{% url 'login' %}" class="btn btn-primary btn-lg mt-3">Zaloguj się</a>
+    {% endif %}
+</div>
+{% endblock %}
