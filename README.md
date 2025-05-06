@@ -7,7 +7,7 @@ Webowy system administracyjny dla wydziału, wspierający zarządzanie przewodam
 - Django 5.2 (Python)
 - LaTeX (pdflatex) do generowania PDF
 - Docker (konteneryzacja)
-- SQLite (domyślnie), opcjonalnie PostgreSQL
+- SQLite (domyślnie)
 
 ## Funkcjonalności
 - Logowanie i role (admin, sekretarz, rada)
